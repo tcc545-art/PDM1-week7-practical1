@@ -25,12 +25,12 @@
             <p>Create a canvas in your preferred size. Draw a shape or some text on the canvas but don't 
                 set any colours yet.
             </p>
-            <p>Add two colour pickers using the <a href="https://p5js.org/reference/p5/createColorPicker" target="_blank"><code>createColourPicker()</code></a> 
-            function. Don't forget to save them both to global variables.</p>
+            <p>Add two colour pickers using the <a href="https://p5js.org/reference/p5/createColorPicker" target="_blank"><code>createColorPicker()</code></a> 
+            function. Refer to the documentation to find out what parameters the function expects. Don't forget to save both colour pickers to global variables.</p>
             <p>The steps for positioning colour pickers are exactly the same as for buttons:
             </p>
             <ol>
-                <li>After the buttons are created and saved to global variables, select the <code>&lt;main&gt;</code> element. You only need to do this once per sketch:<br/>
+                <li>After the colour pickers are created and saved to global variables, select the <code>&lt;main&gt;</code> element. You only need to do this once per sketch:<br/>
                 <pre>const container = select("main");</pre></li>
                 <li>Make the <code>&lt;main&gt;</code> element the parent of both colour pickers (replace <code>colourPicker1</code> and <code>colourPicker2</code> with your variable names):<br/>
                 <pre>colourPicker1.parent(container);
@@ -60,6 +60,9 @@ fill(colourPicker2.value());</pre>
                 <div class="card card-body">
                     <p>You will find it helpful to have the examples from last lecture open as there are many similarities.</p>
                     <p>You don't need to add an event listener to the colour pickers.</p>
+                    <p>You also don't need to match the layout in the video or add labels to the colour pickers (unless you want to 
+                        test your knowledge of drawing with text).
+                    </p>
                 </div>
             </div>
         </div>
